@@ -27,7 +27,10 @@ public class StartAndSave implements CommandLineRunner {
         studentRepository.save(std1);
 
         Student std2 = new Student();
+        //make random name and date
+
         std2.setBorn(LocalDate.now().plusDays(1000));
+
         std2.setName("Viggo");
         studentRepository.save(std2);
 
